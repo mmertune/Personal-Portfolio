@@ -15,9 +15,7 @@ body {
   /* Safari may need this enabled */
   /* scroll-snap-type: y mandatory; */
 }
-i {
-  font-size: 2rem;
-}
+
 a,
 li,
 ul {
@@ -27,15 +25,18 @@ a:hover,
 i:hover {
   cursor: pointer;
 }
+i {
+  font-size: 2rem;
+}
 .flex-row {
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
-.flex-col{
+.flex-col {
   display: flex;
   flex-direction: column;
-  gap: 1rem
+  gap: 1rem;
 }
 .fixed-nav {
   position: fixed;
@@ -46,7 +47,7 @@ i:hover {
 .full-width {
   width: 100%;
 }
-.margin-left{
+.margin-left {
   margin-left: 1rem;
 }
 .nav-links a {
@@ -57,6 +58,9 @@ i:hover {
 }
 
 /* Toggle Switch Positioning */
+input{
+  left: -999px;
+}
 .toggle {
   position: absolute;
   opacity: 0;
@@ -109,23 +113,23 @@ img {
 .snap-stop {
   scroll-snap-stop: always;
 }
+/* Text Alignment on Page */
+
 .grid-container {
   width: 100%;
   height: 100%;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 10vw 25vw 1fr auto 2fr;
-  grid-template-rows: 30vh repeat(3,auto) 1fr;
+  grid-template-rows: 30vh repeat(4, auto) 1fr;
 }
-
-/* Text Alignment on Page */
 
 .align-h1 {
   font-size: 4rem;
   grid-row: 2;
   grid-column: 2;
 }
-.align-line-break{
+.align-line-break {
   color: white;
   grid-row: 3;
   grid-column: 2;
@@ -145,12 +149,14 @@ img {
   grid-column: 4;
   align-self: end;
 }
-.Contact a{
-margin-right: .7rem;
+.Contact a {
+  margin-right: 0.7rem;
 }
-/* .About {
+/* Buttons */
+.page-button {
+  width: max-content;
+  padding: .5rem 1rem;
+  margin-top: 1rem;
+  background-color: burlywood;
+  border-radius: 20px;
 }
-.Projects {
-}
-.Contact {
-} */
