@@ -1,3 +1,13 @@
+:root{
+  --primary-color: #364F6B
+}
+
+/*
+*
+*HOMEPAGE 
+* 
+*/
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -10,7 +20,8 @@ html {
   scroll-snap-type: y mandatory;
 }
 body {
-  background-color: #091c45;
+  background-color: var(--primary-color);
+  /* background-color: #091c45; */
   color: white;
   /* Safari may need this enabled */
   /* scroll-snap-type: y mandatory; */
@@ -205,4 +216,8 @@ label {
   margin-top: 1rem;
   background-color: burlywood;
   border-radius: 20px;
+}
+
+.moving-nav{
+
 }
