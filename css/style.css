@@ -1,5 +1,9 @@
 :root{
-  --primary-color: #364F6B
+  /* --primary-color: #364F6B */
+  --primary-color: #304863;
+  --secondary-color:white;
+  --ring-primary-color:black;
+  --ring-secondary-color:grey;
 }
 
 /*
@@ -92,6 +96,12 @@ i {
   transform-origin: center;
   /* transform-box: fill-box; */
 }
+#Ring_1 path,
+#Ring_2 path,
+#Ring_4 path,
+#Ring_6 path{
+stroke: var(--ring-secondary-color);
+}
 @keyframes Ring1 {
   from {
     transform: rotateZ(0deg);
@@ -106,6 +116,11 @@ i {
   animation: Ring1 30s infinite linear;
   transform-origin: center;
   /* transform-box: fill-box; */
+}
+#Ring_3 path,
+#Ring_5 path,
+#Ring_7 path{
+  stroke: var(--ring-primary-color);
 }
 @keyframes Ring1 {
   from {
