@@ -1,9 +1,9 @@
-:root{
+:root {
   /* --primary-color: #364F6B */
   --primary-color: #304863;
-  --secondary-color:white;
-  --ring-primary-color:black;
-  --ring-secondary-color:grey;
+  --secondary-color: white;
+  --ring-primary-color: black;
+  --ring-secondary-color: grey;
 }
 
 /*
@@ -75,6 +75,10 @@ i {
   width: max-content;
   margin-right: 1rem;
 }
+
+.margin-top-1 {
+  margin-top: 1rem;
+}
 /* Background SVG */
 .fixed-svg {
   /* display: none; */
@@ -100,8 +104,8 @@ i {
 #Ring_1 path,
 #Ring_2 path,
 #Ring_4 path,
-#Ring_6 path{
-stroke: var(--ring-secondary-color);
+#Ring_6 path {
+  stroke: var(--ring-secondary-color);
 }
 @keyframes Ring1 {
   from {
@@ -120,7 +124,7 @@ stroke: var(--ring-secondary-color);
 }
 #Ring_3 path,
 #Ring_5 path,
-#Ring_7 path{
+#Ring_7 path {
   stroke: var(--ring-primary-color);
 }
 @keyframes Ring1 {
@@ -234,6 +238,23 @@ label {
   border-radius: 20px;
 }
 
-.moving-nav{
+/* 
+* Project Page
+*/
 
+.project-container {
+  width: 80%;
+  margin: 1rem auto;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(2, 2fr);
+  grid-auto-rows: 600px;
+}
+.project-item{
+background-color: aliceblue;
+}
+.project-h1{
+  margin-top: 2rem;
+  max-width: ;
+  text-align: center
 }
