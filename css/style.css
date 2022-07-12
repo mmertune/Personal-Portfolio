@@ -79,6 +79,12 @@ i {
 .margin-top-1 {
   margin-top: 1rem;
 }
+.burger-menu {
+  display: none;
+  stroke-width: 5px;
+  stroke: #ffffff;
+  cursor: pointer;
+}
 /* Background SVG */
 .fixed-svg {
   /* display: none; */
@@ -250,11 +256,41 @@ label {
   grid-template-columns: repeat(2, 2fr);
   grid-auto-rows: 600px;
 }
-.project-item{
-background-color: aliceblue;
+.project-item {
+  background-color: aliceblue;
 }
-.project-h1{
+.project-h1 {
   margin-top: 2rem;
-  max-width: ;
-  text-align: center
+  text-align: center;
+}
+
+@media screen and (max-width: 1200px) {
+  .nav-links a {
+    margin-right: 1rem;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .nav-links a {
+    margin-right: 0.5rem;
+  }
+  .social-links a {
+    margin-right: 0.5rem;
+  }
+}
+@media screen and (max-width: 800px) {
+  .full-width {
+    /* width: 90%; */
+  }
+  .flex-row {
+    justify-content: space-around;
+    align-items: center;
+  }
+  .burger-menu {
+    display: block;
+  }
+  .nav-links,
+  .social-links,
+  .theme-switch {
+    display: none;
+  }
 }
