@@ -286,9 +286,6 @@ label {
   }
 }
 @media screen and (max-width: 800px) {
-  .full-width {
-    /* width: 90%; */
-  }
   .fixed-svg {
     /* display: none; */
     width: 130%;
@@ -317,9 +314,9 @@ label {
     grid-column: 2/5;
   }
   .Home h2 {
-    font-size: 2rem;
+    font-size: 1.7rem;
   }
-  .intro{
+  .intro {
     font-size: 1.5rem;
   }
 }
