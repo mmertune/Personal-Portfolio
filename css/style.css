@@ -80,25 +80,31 @@ i {
   margin-top: 1rem;
 }
 .burger-menu {
+  position: fixed;
+  top: 1rem;
+  right: 1.5rem;
+  height: 6%;
   display: none;
   stroke-width: 5px;
   stroke: #ffffff;
   cursor: pointer;
+z-index: 10;
 }
 /* Side Menu for Mobile */
 
 .side-menu {
+  display: none;
   position: fixed;
   right: 0;
   width: 70%;
   height: 100vh;
   background-color: #ffffff;
   color: black;
-  display: flex;
+  /* display: flex; */
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  z-index: 100;
+  z-index: 10;
 }
 .aside-nav-links{
   display: flex;
@@ -329,7 +335,9 @@ label {
     align-items: center;
   }
   .burger-menu {
+    /* z-index: 20; */
     display: block;
+    stroke: white;
   }
   .nav-links,
   .social-links,nav 
