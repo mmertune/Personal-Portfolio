@@ -309,6 +309,7 @@ label {
     grid-row: 4;
     grid-column: 2/4;
   }
+
 }
 @media screen and (max-width: 1000px) {
   .nav-links a {

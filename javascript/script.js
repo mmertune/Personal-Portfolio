@@ -4,6 +4,19 @@ const sideMenu = document.querySelector(".side-menu");
 
 let burgerOpen = false;
 
+window.onresize = function () {
+  if (window.innerWidth > 800) {
+    sideMenu.style.display = "none";
+    burgerMenu.children[0].style.transform = "rotate(0deg)";
+    burgerMenu.children[0].style.stroke = "#ffffff";
+
+    burgerMenu.children[1].style.display = "";
+    burgerMenu.children[1].style.stroke = "#ffffff";
+
+    burgerMenu.children[2].style.transform = "rotate(0deg)";
+    burgerMenu.children[2].style.stroke = "#ffffff";
+  }
+};
 burgerMenu.addEventListener("click", () => {
   if (burgerOpen === false) {
     //open burger menu
