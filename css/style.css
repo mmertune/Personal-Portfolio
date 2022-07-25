@@ -22,6 +22,7 @@
 html {
   font-size: 1.4rem;
   scroll-snap-type: y mandatory;
+  height: 100%;
 }
 body {
   background-color: var(--primary-color);
@@ -29,6 +30,10 @@ body {
   color: white;
   /* Safari may need this enabled */
   /* scroll-snap-type: y mandatory; */
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  position: absolute;
 }
 
 /* class-list-styles */
@@ -88,7 +93,7 @@ i {
   stroke-width: 5px;
   stroke: #ffffff;
   cursor: pointer;
-z-index: 10;
+  z-index: 10;
 }
 /* Side Menu for Mobile */
 
@@ -106,16 +111,16 @@ z-index: 10;
   flex-direction: column;
   z-index: 10;
 }
-.aside-nav-links{
+.aside-nav-links {
   display: flex;
   flex-direction: column;
   font-size: 3rem;
   margin-bottom: 1rem;
 }
-.aside-nav-links li{
+.aside-nav-links li {
   margin-bottom: 1rem;
 }
-.aside-social-links{
+.aside-social-links {
   margin-bottom: 2rem;
 }
 /* Background SVG */
@@ -296,7 +301,21 @@ label {
   margin-top: 2rem;
   text-align: center;
 }
-
+.project-nav {
+  height: 6%;
+  margin-top: 1rem;
+}
+.burger-menu2 {
+  position: absolute;
+  top: 1rem;
+  right: 1.5rem;
+  height: 6%;
+  display: none;
+  stroke-width: 5px;
+  stroke: #ffffff;
+  cursor: pointer;
+  z-index: 10;
+}
 @media screen and (max-width: 1200px) {
   .nav-links a {
     margin-right: 1rem;
@@ -309,7 +328,6 @@ label {
     grid-row: 4;
     grid-column: 2/4;
   }
-
 }
 @media screen and (max-width: 1000px) {
   .nav-links a {
@@ -335,14 +353,14 @@ label {
     justify-content: space-around;
     align-items: center;
   }
-  .burger-menu {
+  .burger-menu,.burger-menu2 {
     /* z-index: 20; */
     display: block;
     stroke: white;
   }
   .nav-links,
-  .social-links,nav 
-  .theme-switch {
+  .social-links,
+  nav .theme-switch {
     display: none;
   }
 
@@ -376,4 +394,5 @@ label {
   .align-links {
     margin-bottom: 0.5rem;
   }
+
 }

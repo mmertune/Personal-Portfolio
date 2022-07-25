@@ -1,4 +1,4 @@
-const burgerMenu = document.querySelector(".burger-menu");
+const burgerMenu = document.querySelector(".burger-menu, .burger-menu2");
 const toggle = document.querySelector(".toggle");
 const sideMenu = document.querySelector(".side-menu");
 const sideMenuLinks = document.querySelectorAll(".aside-nav-links a")
