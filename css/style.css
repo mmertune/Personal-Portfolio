@@ -376,4 +376,9 @@ label {
   .align-links {
     margin-bottom: 0.5rem;
   }
+  .project-container {
+    width: 90%;
+    grid-template-columns: repeat(1, 2fr);
+    grid-auto-rows: 600px;
+  }
 }
