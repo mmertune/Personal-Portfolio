@@ -1,5 +1,6 @@
 const burgerMenu = document.querySelector(".burger-menu, .burger-menu2");
 const burgerMenu2 = document.querySelector(".burger-menu2");
+const blurScreen = document.querySelector(".blur-screen")
 
 const toggle = document.querySelector(".toggle");
 const sideMenu = document.querySelector(".side-menu");
@@ -24,9 +25,33 @@ window.onresize = function () {
     burgerchild3.transform = "rotate(0deg)";
     burgerchild3.stroke = "#ffffff";
 
+    blurScreen.style.display = "none"
     burgerOpen = false
   }
 };
+blurScreen.addEventListener("click", ()=>{
+  burgerchild1.transform = "rotate(0deg)";
+    burgerchild1.stroke = "#ffffff";
+    burgerchild1.transitionDuration = "0.5s";
+
+    burgerchild2.display = "";
+    burgerchild2.stroke = "#ffffff";
+    burgerchild2.transitionDuration = "0.5s";
+
+    burgerchild3.transform = "rotate(0deg)";
+    burgerchild3.stroke = "#ffffff";
+    burgerchild3.transitionDuration = "0.5s";
+
+    sideMenu.style.display = "none";
+    if(burgerMenu2){
+      burgerMenu2.style.position = "absolute"
+    }
+    if(blurScreen){
+      blurScreen.style.display = "none"
+    }
+    burgerOpen = false;
+  
+})
 burgerMenu.addEventListener("click", () => {
   if (burgerOpen === false) {
     //open burger menu & animate burger to X
@@ -49,6 +74,9 @@ burgerMenu.addEventListener("click", () => {
     if(burgerMenu2){
       burgerMenu2.style.position = "fixed"
     }
+    if(blurScreen){
+      blurScreen.style.display = "block"
+    }
     burgerOpen = true;
   } else {
     //close burger menu & animate X to burger
@@ -68,6 +96,9 @@ burgerMenu.addEventListener("click", () => {
     if(burgerMenu2){
       burgerMenu2.style.position = "absolute"
     }
+    if(blurScreen){
+      blurScreen.style.display = "none"
+    }
     burgerOpen = false;
   }
 });
@@ -83,7 +114,9 @@ link.addEventListener("click", ()=>{
 
   burgerchild3.transform = "rotate(0deg)";
   burgerchild3.stroke = "#ffffff";
-
+  if(blurScreen){
+    blurScreen.style.display = "none"
+  }
   burgerOpen = false
 })
 })

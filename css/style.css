@@ -97,6 +97,15 @@ i {
 }
 /* Side Menu for Mobile */
 
+.blur-screen{
+  display: none;
+  background-color: rgba(0, 0, 0,0.5);
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  z-index: 5;
+}
+
 .side-menu {
   display: none;
   position: fixed;
@@ -354,7 +363,6 @@ label {
     align-items: center;
   }
   .burger-menu,.burger-menu2 {
-    /* z-index: 20; */
     display: block;
     stroke: white;
   }
